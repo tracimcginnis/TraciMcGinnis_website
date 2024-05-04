@@ -1,0 +1,11 @@
+---
+title: "The Best Video Games Based on Parent Choices and Critic Ratings"
+description: |
+  For one of our projects, we created a Video Game Selector for Parents using Shiny App
+
+output: distill::distill_article
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+<iframe src="https://mcginnis.shinyapps.io/VideoGameSelector/" class="l-screen-inset shaded" height="800px" target="_self"></iframe>

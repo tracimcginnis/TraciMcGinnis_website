@@ -1,0 +1,20 @@
+---
+title: "Traci McGinnis"
+image: "Traci_logo.png"
+links:
+  - label: Executive Perspectives
+    url: "https://www.benefitfocus.com/resources/blog/executive-perspectives-qa-traci-mcginnis"
+  - label: Blog
+    url: "https://www.benefitfocus.com/resources/blog/ownership-pricing-and-claims-data"
+output:
+  postcards::trestles
+site: distill::distill_website
+---
+
+### Welcome to my Online Portfolio!
+
+Here, you'll find a collection of a few of the projects highlighting my journey through the Master of Science in Health Informatics and Analytics (MS-HIA) program at Tufts University School of Medicine, specifically work from the course on Data Visualization.
+
+Additionally, explore details about my professional background, including my passion for transforming healthcare through claim data price transparency and data access.
+
+Whether you're interested in healthcare analytics, informatics, or my professional journey, this platform serves as a glimpse into some of my work and aspirations. I'm delighted you stopped by!

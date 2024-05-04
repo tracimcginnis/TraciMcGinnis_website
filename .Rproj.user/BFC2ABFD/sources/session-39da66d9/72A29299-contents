@@ -1,0 +1,19 @@
+name: "TraciMcGinnis_website"
+title: "Traci McGinnis"
+theme: my_theme.css
+description: |
+  Traci McGinnis
+output_dir: "docs"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "Data Analysis"
+      href: data_analysis.html
+    - text: "My Shiny App"
+      href: shiny_app.html
+    - text: "Dear Data Postcard"
+      href: dear_data.html
+    - text: "About Me"
+      href: about_2.html
+output: distill::distill_article

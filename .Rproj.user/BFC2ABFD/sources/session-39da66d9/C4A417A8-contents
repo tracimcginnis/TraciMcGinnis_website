@@ -1,0 +1,51 @@
+---
+title: "Hospital Price Transparency Enforcement Activities and Outcomes"
+description: >
+  This analysis outlines the enforcement actions taken by CMS following a compliance review of a hospital's obligation to establish, update, and make public a list of standard charges for standard items and services. The data indicates that as more warning notices were given, there was a positive shift in hospitals meeting requirements. [Link to Reference Data](https://data.cms.gov/resources/hospital-price-transparency-enforcement-activities-and-outcomes-methodology)
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, layout="l-body-outset", fig.width=8, fig.height=2.5}
+library(ggplot2)
+library(dplyr)
+
+HospitalPTEnforcement <- read.csv("HospitalPTEnforcement.csv")
+
+# Convert DT_Action to Date format
+HospitalPTEnforcement$DT_Action <- as.Date(paste(HospitalPTEnforcement$DT_Action, "-01", sep = ""), "%Y-%m-%d")
+
+# Calculate count of hospitals for each combination of date and action type
+hospital_counts <- HospitalPTEnforcement %>%
+  group_by(DT_Action, Action) %>%
+  summarise(count = n())
+
+# Filter the data to include only "Warning Notice" and "Met Requirements" actions
+hospital_counts <- HospitalPTEnforcement %>%
+  filter(Action %in% c("Warning Notice", "Met Requirements")) %>%
+  group_by(DT_Action, Action) %>%
+  summarise(count = n())
+
+# Create the line graph with increased point size
+ggplot(hospital_counts, aes(x = DT_Action, y = count, color = Action)) +
+  geom_line(size = 0.5) +  # Adjust the size of the lines here
+  geom_point(size = 0.75) +  # Adjust the size of the points here
+  scale_x_date(date_labels = "%Y-%m", date_breaks = "6 months") +
+  labs(title = "Hospital Enforcement Actions Over Time",
+       x = "Date",
+       y = "Count of Hospitals",
+       color = "Action") +
+  theme_minimal()
+
+```
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+---
+title: "Traci McGinnis, Healthcare Data Advocate"
+image: "PIC.jpg"
+links:
+  - label: LinkedIn
+    url: "http://www.linkedin.com/in/traci-mcginnis/"
+output:
+  postcards::trestles
+site: distill::distill_article
+---
+ 
+## Bio
+
+I'm a seasoned leader and strategic thinker with over a decade of experience rolling out data strategies to make businesses run smoother and boost revenue. With more than 20 years in the software and service sectors, I've honed my skills in handling healthcare claim data, procurement data, and enterprise data, all while guiding cross-functional teams to success.
+
+I'm all about soaking up knowledge and growing, and I pride myself on being emotionally tuned in to my team and laser-focused on customers. My true passion lies in using informatics and analytics to shake things up, innovate, and craft outstanding experiences for customers.  
+
+## Education
+
+**Tufts University School of Medicine** | *Medford, MA*  
+M.S. in Healthcare Informatics and Analytics | *May 2024*
+
+- Awards & Recognition | *2024 Outstanding MS-HIA Capstone Award*
+
+**Lincoln College** | *Normal, IL*  
+B.B.A. in Business Management | *June 2011*
+
+- Awards & Recognition | *First Place: Business Design Capstone | Summa cum Laude*
+
+## Current Experience
+
+#### Benefitfocus
+- Vice President, Health Informatics | *January 2024 - Current*  
+- Senior Director, Health Informatics Product Strategy | *March 2023 - January 2024*
+- Director, Health Insights | *January 2020 - March 2023*
+- Senior Manager, HCM Consulting | *July 2019 - January 2020*

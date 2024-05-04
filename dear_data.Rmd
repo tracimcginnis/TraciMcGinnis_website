@@ -1,0 +1,12 @@
+---
+title: "Dear Data Postcard"
+description: |
+  My dear data postcard was created after tracking work meetings for one week. I focused on multiple variables, including day of the week, length of meeting, internal or external attendees, and meeting effectiveness.
+output: distill::distill_article
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+```{r layout="1-body-outset"}
+knitr::include_graphics("DearData Postcard.png")
+```
